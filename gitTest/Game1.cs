@@ -37,7 +37,9 @@ namespace gitTest
             Console.WriteLine("feature 1:");
             Console.WriteLine("Sum is "+sum(a, b));
             Console.WriteLine("feature 2:");
-            Console.WriteLine("Subtract is " + sum(a, c));
+            Console.WriteLine("Subtract is " + subtract(a, c));
+            Console.WriteLine("feature 3:");
+            Console.WriteLine("Multiply is " + multiply(b, c));
 
             // TODO: use this.Content to load your game content here
         }
@@ -69,6 +71,11 @@ namespace gitTest
         private int subtract (int a, int b)
         {
             return a - b;
+        }
+
+        private int multiply (int a, int b)
+        {
+            return a * b;
         }
     }
 }
