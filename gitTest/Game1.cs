@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -8,6 +9,8 @@ namespace gitTest
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
+        private int a;
+        private int b;
 
         public Game1()
         {
@@ -19,14 +22,17 @@ namespace gitTest
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
+            a = 5;
+            b = 9;
             base.Initialize();
         }
 
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            Console.WriteLine("feature 1");
+            Console.WriteLine("Sum is "+sum(a, b));
+            
             // TODO: use this.Content to load your game content here
         }
 
@@ -47,6 +53,11 @@ namespace gitTest
             // TODO: Add your drawing code here
 
             base.Draw(gameTime);
+        }
+
+        private int sum (int a, int b)
+        {
+            return a + b;
         }
     }
 }
