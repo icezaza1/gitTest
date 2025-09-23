@@ -13,6 +13,7 @@ namespace gitTest
         private int b;
         private int c;
         private int d;
+        private int e;
 
         public Game1()
         {
@@ -28,6 +29,7 @@ namespace gitTest
             b = 9;
             c = 2;
             d = 8;
+            e = 4;
             base.Initialize();
         }
 
@@ -40,6 +42,8 @@ namespace gitTest
             Console.WriteLine("Subtract is " + subtract(a, c));
             Console.WriteLine("feature 3:");
             Console.WriteLine("Multiply is " + multiply(b, c));
+            Console.WriteLine("player Jump:");
+            Console.WriteLine("Divide is " + divide(d, e));
 
             // TODO: use this.Content to load your game content here
         }
@@ -76,6 +80,11 @@ namespace gitTest
         private int multiply (int a, int b)
         {
             return a * b;
+        }
+
+        private int divide (int a, int b)
+        {
+            return a / b;
         }
     }
 }
