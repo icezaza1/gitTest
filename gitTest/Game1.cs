@@ -11,6 +11,8 @@ namespace gitTest
         private SpriteBatch _spriteBatch;
         private int a;
         private int b;
+        private int c;
+        private int d;
 
         public Game1()
         {
@@ -24,15 +26,19 @@ namespace gitTest
             // TODO: Add your initialization logic here
             a = 5;
             b = 9;
+            c = 2;
+            d = 8;
             base.Initialize();
         }
 
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-            Console.WriteLine("feature 1");
+            Console.WriteLine("feature 1:");
             Console.WriteLine("Sum is "+sum(a, b));
-            
+            Console.WriteLine("feature 2:");
+            Console.WriteLine("Subtract is " + sum(a, c));
+
             // TODO: use this.Content to load your game content here
         }
 
@@ -58,6 +64,11 @@ namespace gitTest
         private int sum (int a, int b)
         {
             return a + b;
+        }
+
+        private int subtract (int a, int b)
+        {
+            return a - b;
         }
     }
 }
