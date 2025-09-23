@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -40,6 +41,7 @@ namespace gitTest
             Console.WriteLine("Subtract is " + subtract(a, c));
             Console.WriteLine("feature 3:");
             Console.WriteLine("Multiply is " + multiply(b, c));
+            Console.WriteLine("Power is " + power(a));
 
             // TODO: use this.Content to load your game content here
         }
@@ -76,6 +78,11 @@ namespace gitTest
         private int multiply (int a, int b)
         {
             return a * b;
+        }
+
+        private int power (int a)
+        {
+            return a * a;
         }
     }
 }
