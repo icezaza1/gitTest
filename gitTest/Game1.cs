@@ -35,11 +35,13 @@ namespace gitTest
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             Console.WriteLine("feature 1:");
-            Console.WriteLine("Sum is "+sum(a, b));
+            Console.WriteLine("Sum is " + sum(a, b));
             Console.WriteLine("feature 2:");
             Console.WriteLine("Subtract is " + subtract(a, c));
             Console.WriteLine("feature 3:");
             Console.WriteLine("Multiply is " + multiply(b, c));
+            Console.WriteLine("feature 4:");
+            Console.WriteLine("Divide is " + multiply(d, c));
 
             // TODO: use this.Content to load your game content here
         }
@@ -63,19 +65,24 @@ namespace gitTest
             base.Draw(gameTime);
         }
 
-        private int sum (int a, int b)
+        private int sum(int a, int b)
         {
             return a + b;
         }
 
-        private int subtract (int a, int b)
+        private int subtract(int a, int b)
         {
             return a - b;
         }
 
-        private int multiply (int a, int b)
+        private int multiply(int a, int b)
         {
             return a * b;
+        }
+
+        private int divide (int a, int b)
+        {
+            return a / b;
         }
     }
 }
