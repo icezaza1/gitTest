@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -42,6 +43,7 @@ namespace gitTest
             Console.WriteLine("Multiply is " + multiply(b, c));
             Console.WriteLine("feature 4:");
             Console.WriteLine("Divide is " + multiply(d, c));
+            Console.WriteLine("Power is " + power(a));
 
             // TODO: use this.Content to load your game content here
         }
@@ -80,9 +82,9 @@ namespace gitTest
             return a * b;
         }
 
-        private int divide (int a, int b)
+        private int power(int a)
         {
-            return a / b;
+            return a * a;
         }
     }
 }
