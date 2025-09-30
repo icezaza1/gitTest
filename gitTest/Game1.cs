@@ -87,5 +87,10 @@ namespace gitTest
         {
             return a * a;
         }
+
+        private int max(int a, int b)
+        {
+            return Math.Max(a,b);
+        }
     }
 }
