@@ -25,11 +25,12 @@ namespace gitTest
 
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
+            
             a = 5;
             b = 9;
             c = 2;
             d = 8;
+            
             base.Initialize();
         }
 
@@ -45,6 +46,7 @@ namespace gitTest
             Console.WriteLine("feature 4:");
             Console.WriteLine("Divide is " + multiply(d, c));
             Console.WriteLine("Power is " + power(a));
+            Console.WriteLine("LoveDG");
 
             // TODO: use this.Content to load your game content here
         }
