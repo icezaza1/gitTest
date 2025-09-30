@@ -14,6 +14,7 @@ namespace gitTest
         private int b;
         private int c;
         private int d;
+        private int f;
 
         public Game1()
         {
