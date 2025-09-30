@@ -14,6 +14,7 @@ namespace gitTest
         private int b;
         private int c;
         private int d;
+        private int e;
 
         public Game1()
         {
@@ -85,6 +86,11 @@ namespace gitTest
         private int power(int a)
         {
             return a * a;
+        }
+
+        private int max(int a, int b)
+        {
+            return Math.Max(a,b);
         }
     }
 }
