@@ -87,6 +87,11 @@ namespace gitTest
         {
             return a * a;
         }
+        private bool isEven(int a)
+        {
+            if (a%2 == 0) return true;
+            return false;
+        }
 
         private int max(int a, int b)
         {
